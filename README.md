@@ -2,7 +2,7 @@
 Docker container for courses based on the [Software Foundations](https://softwarefoundations.cis.upenn.edu/) book.
 The container can be used for easy cross-platform Coq development using Visual Studio Code.
 
-The image uses Coq 8.15.2 and includes *all dependencies* needed to complete the following Software Foundations volumes
+The image uses Coq 8.15.2 and includes *all dependencies* needed to complete the following Software Foundations volumes:
 * [Logical Foundations (Volume 1)](https://softwarefoundations.cis.upenn.edu/lf-current/index.html)
 * [Programming Language Foundations (Volume 2)](https://softwarefoundations.cis.upenn.edu/plf-current/index.html)
 * [Verified Functional Algorithms (Volume 3)](https://softwarefoundations.cis.upenn.edu/vfa-current/index.html)
@@ -23,7 +23,7 @@ If the instructions are followed correctly Visual Studio Code should also automa
 ### VSCode shows `Docker returned an error`
 Make sure that Docker is installed and running.
 
-### The `Remote-Containers: Reopen in Container` is not recoqnized by VSCode
+### The `Remote-Containers: Reopen in Container` command is not recoqnized by VSCode
 You need to have the Remote - Containers extension VSCode extension installed and enabled.
 See [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for instructions on how to install it.
 
