@@ -19,7 +19,7 @@ The image uses Coq 8.15.2 and includes *all dependencies* needed to complete the
 After following the above instructions open your project in Visual Studio Code and run the `Remote-Containers: Reopen in Container` command.
 If the instructions are followed correctly Visual Studio Code should also automatically suggest opening the repository in container mode when the project is loaded.
 
-## FAQ
+## Known problems
 ### VSCode shows `Docker returned an error`
 Make sure that Docker is installed and running.
 
@@ -36,5 +36,20 @@ Make sure you copied the `.devcontainer` folder to your projects root folder and
   * Move the files to the root project folder
   * Or change the line `"coq.coqProjectRoot": "."` (in `.devcontainer/devcontainer.json` to point to the directory where `_CoqProject` is located. Restarting the docker container is required after this step.
 
+### Docker pull rate limit hit
+Docker Hub rate limits pulls of images for free accounts to 200 per six hours.
+If this limit is hit you might get one of the following errors and have to wait until the rate limit resets.
+* `ERROR: toomanyrequests: Too Many Requests`
+* `You have reached your pull rate limit. You may increase the limit by authenticating and upgrading: https://www.docker.com/increase-rate-limits`
 
-## Known proplems
+
+## FAQ
+### What is included in the Docker image?
+The Docker image used for the devcontainer is built using the [Dockerfile](Dockerfile) in this repository, which is based on the [coqorg/coq:8.15.2-ocaml-4.14.0-flambda](https://hub.docker.com/layers/coq/coqorg/coq/8.15.2-ocaml-4.14.0-flambda/images/sha256-5bf48009faa80a0cdab45b77d5e3dcbd5ab80358e9a8923371a5959fc821f3df?context=explore) image. This image includes:
+* Debian 11 Slim
+* opam 2.1.2
+* OCaml 4.14.0
+* Coq 8.15.2
+* coq-quickchick 1.6.1
+* coq-ext-lib 0.11.6
+* coq-equations 1.3+8.15
