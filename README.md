@@ -15,7 +15,7 @@ The image uses Coq 8.15.2 and includes *all dependencies* needed to complete the
 2) Make sure Docker is running
 3) [Install Visual Studio Code](https://code.visualstudio.com/Download)
 4) [Install Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-5) Copy the `.devcontainer` folder to your project folder
+5) Copy the `.devcontainer` folder to the root of your project folder
 
 After following the above instructions open your project in Visual Studio Code and run the `Remote-Containers: Reopen in Container` command.
 If the instructions are followed correctly Visual Studio Code should also automatically suggest opening the repository in container mode when the project is loaded.
