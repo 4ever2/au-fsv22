@@ -1,13 +1,13 @@
 # au-fsv22
-Docker container for courses based on the Software Foundations book.
+Docker container for courses based on the [Software Foundations](https://softwarefoundations.cis.upenn.edu/) book.
 The container can be used for easy cross-platform Coq development using Visual Studio Code.
 
 The image uses Coq 8.15.2 and includes *all dependencies* needed to complete the following Software Foundations volumes
-* Logical Foundations (Volume 1)
-* Programming Language Foundations (Volume 2)
-* Verified Functional Algorithms (Volume 3)
-* QuickChick: Property-Based Testing in Coq (Volume 4)
-* Separation Logic Foundations (Volume 6)
+* [Logical Foundations (Volume 1)](https://softwarefoundations.cis.upenn.edu/lf-current/index.html)
+* [Programming Language Foundations (Volume 2)](https://softwarefoundations.cis.upenn.edu/plf-current/index.html)
+* [Verified Functional Algorithms (Volume 3)](https://softwarefoundations.cis.upenn.edu/vfa-current/index.html)
+* [QuickChick: Property-Based Testing in Coq (Volume 4)](https://softwarefoundations.cis.upenn.edu/qc-current/index.html)
+* [Separation Logic Foundations (Volume 6)](https://softwarefoundations.cis.upenn.edu/slf-current/index.html)
 
 
 ## Setup
@@ -45,7 +45,7 @@ If this limit is hit you might get one of the following errors and have to wait 
 
 ## FAQ
 ### What is included in the Docker image?
-The Docker image used for the devcontainer is built using the [Dockerfile](Dockerfile) in this repository, which is based on the [coqorg/coq:8.15.2-ocaml-4.14.0-flambda](https://hub.docker.com/layers/coq/coqorg/coq/8.15.2-ocaml-4.14.0-flambda/images/sha256-5bf48009faa80a0cdab45b77d5e3dcbd5ab80358e9a8923371a5959fc821f3df?context=explore) image. This image includes:
+The Docker image used for the devcontainer is built using the [Dockerfile](Dockerfile) in this repository and hosted on Docker Hub. It is based on the [coqorg/coq:8.15.2-ocaml-4.14.0-flambda](https://hub.docker.com/layers/coq/coqorg/coq/8.15.2-ocaml-4.14.0-flambda/images/sha256-5bf48009faa80a0cdab45b77d5e3dcbd5ab80358e9a8923371a5959fc821f3df?context=explore) image, which includes the following:
 * Debian 11 Slim
 * opam 2.1.2
 * OCaml 4.14.0
