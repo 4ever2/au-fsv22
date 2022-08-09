@@ -34,7 +34,7 @@ Make sure you copied the `.devcontainer` folder to your projects root folder and
 * Make sure that the Coq files have been compiled. Run `make` to compile the project files.
 * If the `_CoqProject` files is not located in the project root folder you need to either
   * Move the files to the root project folder
-  * Or change the line `"coq.coqProjectRoot": "."` (in `.devcontainer/devcontainer.json` to point to the directory where `_CoqProject` is located. Restarting the docker container is required after this step.
+  * Or add the line `"coq.coqProjectRoot": "PATH_TO_COQPROJECT"` (in `.devcontainer/devcontainer.json` to point to the directory where `_CoqProject` is located. Restarting the docker container is required after this step.
 
 ### Docker pull rate limit hit
 Docker Hub rate limits pulls of images for free accounts to 200 per six hours.
