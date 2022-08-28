@@ -1,5 +1,5 @@
 {
-  "image": "eskehoy/aufsv22:latest",
+  "image": "eskehoy/aufsv22",
   "customizations": {
     "vscode": {
       "extensions": ["maximedenes.vscoq"],
@@ -13,6 +13,7 @@
           "**/.*.cache": true
         },
         "coq.loadCoqProject": true,
+        "coq.coqProjectRoot": ".",
         "[coq]": {
           "editor.tabSize": 2,
           "editor.insertSpaces": true
