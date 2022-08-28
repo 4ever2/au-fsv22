@@ -1,6 +1,7 @@
 # au-fsv22
 Docker container for courses based on the [Software Foundations](https://softwarefoundations.cis.upenn.edu/) book.
 The container can be used for easy cross-platform Coq development using Visual Studio Code.
+The container configuration will automatically install the VsCoq extenstion for Visual Studio Code and configure Coq related settings.
 
 The image uses Coq 8.15.2 and includes *all dependencies* needed to complete the following Software Foundations volumes:
 * [Logical Foundations (Volume 1)](https://softwarefoundations.cis.upenn.edu/lf-current/index.html)
@@ -19,6 +20,9 @@ The image uses Coq 8.15.2 and includes *all dependencies* needed to complete the
 
 After following the above instructions open your project in Visual Studio Code and run the `Remote-Containers: Reopen in Container` command.
 If the instructions are followed correctly Visual Studio Code should also automatically suggest opening the repository in container mode when the project is loaded.
+
+## System requirements
+See [here](https://code.visualstudio.com/docs/remote/containers#_system-requirements)
 
 ## Known problems
 ### VSCode shows `Docker returned an error`
