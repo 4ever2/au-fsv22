@@ -1,5 +1,5 @@
 {
-  "image": "eskehoy/aufsv22",
+  "image": "eskehoy/aufsv22:8.17.1",
   "customizations": {
     "vscode": {
       "extensions": ["maximedenes.vscoq"],

@@ -3,7 +3,7 @@ Docker container for courses based on the [Software Foundations](https://softwar
 The container can be used for easy cross-platform Coq development using Visual Studio Code.
 The container configuration will automatically install the VsCoq extenstion for Visual Studio Code and configure Coq related settings.
 
-The image uses Coq 8.15.2 and includes *all dependencies* needed to complete the following Software Foundations volumes:
+The image uses Coq 8.17.1 and includes *all dependencies* needed to complete the following Software Foundations volumes:
 * [Logical Foundations (Volume 1)](https://softwarefoundations.cis.upenn.edu/lf-current/index.html)
 * [Programming Language Foundations (Volume 2)](https://softwarefoundations.cis.upenn.edu/plf-current/index.html)
 * [Verified Functional Algorithms (Volume 3)](https://softwarefoundations.cis.upenn.edu/vfa-current/index.html)
@@ -50,11 +50,11 @@ If this limit is hit you might get one of the following errors and have to wait 
 
 ## FAQ
 ### What is included in the Docker image?
-The Docker image used for the devcontainer is built using the [Dockerfile](Dockerfile) in this repository and hosted on Docker Hub. It is based on the [coqorg/coq:8.15.2-ocaml-4.14.0-flambda](https://hub.docker.com/layers/coq/coqorg/coq/8.15.2-ocaml-4.14.0-flambda/images/sha256-5bf48009faa80a0cdab45b77d5e3dcbd5ab80358e9a8923371a5959fc821f3df?context=explore) image, which includes the following:
+The Docker image used for the devcontainer is built using the [Dockerfile](Dockerfile) in this repository and hosted on Docker Hub. It is based on the [coqorg/coq:8.17.1-ocaml-4.14.1-flambda](https://hub.docker.com/layers/coqorg/coq/8.17.1-ocaml-4.14.1-flambda/images/sha256-5ac4943cc2a941455dbf7b7bc35beb10305ebf7b25e6fdeb98ecebc07c8bfda3?context=explore) image, which includes the following:
 * Debian 11 Slim
-* opam 2.1.2
-* OCaml 4.14.0
-* Coq 8.15.2
-* coq-quickchick 1.6.1
-* coq-ext-lib 0.11.6
-* coq-equations 1.3+8.15
+* opam 2.1.3
+* OCaml 4.14.1
+* Coq 8.17.1
+* coq-quickchick 2.0.0
+* coq-ext-lib 0.11.8
+* coq-equations 1.3+8.17
