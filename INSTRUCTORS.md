@@ -16,7 +16,7 @@
     base-bigarray          base
     base-threads           base
     base-unix              base
-    biniou                 1.2.2          Binary data format designed for speed, safety, ease of use and backward compatib
+    biniou                 1.2.2          Binary data format designed for speed, safety, ease of use and backward compatible
     camlp-streams          5.0.1          The Stream and Genlex libraries for use with Camlp4 and Camlp5
     cmdliner               1.2.0          Declarative definition of command line interfaces for OCaml
     conf-gmp               4              Virtual package relying on a GMP lib system installation
@@ -48,7 +48,7 @@
     ocaml-config           2              OCaml Switch Configuration
     ocaml-option-flambda   1              Set OCaml to be compiled with flambda activated
     ocaml-variants         4.14.1+options Official release of OCaml 4.14.1
-    ocamlbuild             0.14.2         OCamlbuild is a build system with builtin rules to easily build most OCaml proje
+    ocamlbuild             0.14.2         OCamlbuild is a build system with builtin rules to easily build most OCaml projects
     ocamlfind              1.9.6          pinned to version 1.9.6
     opam-depext            1.2.1-1        Install OS distribution packages
     parsexp                v0.15.0        S-expression parsing library
@@ -56,7 +56,7 @@
     ppx_derivers           1.2.1          Shared [@@deriving] plugin registry
     ppx_deriving           5.2.1          Type-driven code generation for OCaml
     ppx_deriving_yojson    3.7.0          JSON codec generator for OCaml
-    ppx_hash               v0.15.0        A ppx rewriter that generates hash functions from type expressions and definitio
+    ppx_hash               v0.15.0        A ppx rewriter that generates hash functions from type expressions and definitions
     ppx_import             1.10.0         A syntax extension for importing declarations from interface files
     ppx_sexp_conv          v0.15.1        [@@deriving] plugin to generate S-expression conversion functions
     ppxlib                 0.30.0         Standard infrastructure for ppx rewriters
@@ -73,14 +73,14 @@
 
 
 ## Build and deploy Docker image
-The prebuilt Docker image can be found on [Docker Hub](https://hub.docker.com/r/eskehoy/aufsv22/tags). You can build the image yourself using the following command. Replacing `IMAGE_NAME` and `TAG` with appropiate values.
+The prebuilt Docker image can be found on [Docker Hub](https://hub.docker.com/r/eskehoy/aufsv22/tags). You can build the image yourself using the following command. Replacing `IMAGE_NAME` and `TAG` with appropriate values.
 ```bash
 docker build src -t IMAGE_NAME:TAG
 ```
 
-By default this will build a Docker image identical to the prebuilt image. See what is included in the image [here](#packages-included).
+By default, this will build a Docker image identical to the prebuilt image. See what is included in the image [here](#packages-included).
 
-The image can be qustomized by setting the `COQ_IMAGE` and `OPAM_PACKAGES` variable as shown below:
+The image can be customized by setting the `COQ_IMAGE` and `OPAM_PACKAGES` variables as shown below:
 
 ```bash
 docker build src -t IMAGE_NAME:TAG --build-arg COQ_IMAGE=X OPAM_PACKAGES=Y
@@ -99,7 +99,7 @@ docker push DOCKER_HUB_USERNAME/IMAGE_NAME:TAG
 
 After pushing the image the `.devcontainer.json` file will need to be updated.
 Update the line
-`"image": "eskehoy/aufsv22:latest"` to reflect the username, image name and tag used above. The tag can be omitted, in which case VSCode will always pull the latest tag.
+`"image": "eskehoy/aufsv22:latest"` to reflect the username, image name, and tag used above. The tag can be omitted, in which case VSCode will always pull the latest tag.
 
 If the devcontainer is used with a project containing a `_CoqProject` file, the file must be located in the project root. If not the `"coq.coqProjectRoot": "."` line must be updated to tell Coq where the `_CoqProject` file is located.
 
@@ -111,6 +111,6 @@ The `.devcontainer.json` file is made up of three different components:
 
 The image used by default is the latest tag of the [eskehoy/aufsv22](https://hub.docker.com/r/eskehoy/aufsv22/tags) Docker Hub image.
 
-By default the VsCoq extension will be installed in the devcontainer.
+By default, the VsCoq extension will be installed in the devcontainer.
 
 The default settings defined in `.devcontainer.json` will hide compiled Coq files in the file explorer, and set the default tab size to 2 spaces in Coq files. Additional settings can be added here.
