@@ -1,7 +1,7 @@
-# au-fsv22
+# au-fsv
 Docker container for courses based on the [Software Foundations](https://softwarefoundations.cis.upenn.edu/) book.
 The container can be used for easy cross-platform Coq development using Visual Studio Code.
-The container configuration will automatically install the VsCoq extenstion for Visual Studio Code and configure Coq related settings.
+The container configuration will automatically install the VsCoq extension for Visual Studio Code and configure Coq-related settings.
 
 The image uses Coq 8.17.1 and includes *all dependencies* needed to complete the following Software Foundations volumes:
 * [Logical Foundations (Volume 1)](https://softwarefoundations.cis.upenn.edu/lf-current/index.html)
@@ -28,16 +28,16 @@ See [here](https://code.visualstudio.com/docs/remote/containers#_system-requirem
 ### VSCode shows `Docker returned an error`
 Make sure that Docker is installed and running.
 
-### The `Remote-Containers: Reopen in Container` command is not recoqnized by VSCode
+### The `Remote-Containers: Reopen in Container` command is not recognized by VSCode
 You need to have the Remote - Containers extension VSCode extension installed and enabled.
 See [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for instructions on how to install it.
 
-### Running `Remote-Containers: Reopen in Container` cannot find container
-Make sure you copied the `.devcontainer` folder to your projects root folder and that it includes the `devcontainer.json` file.
+### Running `Remote-Containers: Reopen in Container` cannot find the container
+Make sure you copied the `.devcontainer` folder to your project's root folder and that it includes the `devcontainer.json` file.
 
-### `Cannot find a physical path bound to logical path X with prefix Y` when importing file
+### `Cannot find a physical path bound to logical path X with prefix Y` when importing a file
 * Make sure that the Coq files have been compiled. Run `make` to compile the project files.
-* If the `_CoqProject` files is not located in the project root folder you need to either
+* If the `_CoqProject` files are not located in the project root folder you need to either
   * Move the files to the root project folder
   * Or add the line `"coq.coqProjectRoot": "PATH_TO_COQPROJECT"` (in `.devcontainer/devcontainer.json` to point to the directory where `_CoqProject` is located. Restarting the docker container is required after this step.
 
