@@ -2,7 +2,7 @@
   "image": "eskehoy/aufsv22:8.17.1",
   "customizations": {
     "vscode": {
-      "extensions": ["maximedenes.vscoq"],
+      "extensions": ["coq-community.vscoq1"],
       "settings": {
         "files.exclude": {
           "**/*.aux": true,
