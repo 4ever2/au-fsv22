@@ -12,9 +12,6 @@
           "**/*.vok": true,
           "**/.*.cache": true
         },
-        "vscoq.path": "/home/rocq/.opam/4.14.2+flambda/bin/",
-        "coq.loadCoqProject": true,
-        "coq.coqProjectRoot": ".",
         "[coq]": {
           "editor.tabSize": 2,
           "editor.insertSpaces": true
