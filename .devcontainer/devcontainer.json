@@ -2,7 +2,7 @@
   "image": "eskehoy/aufsv22:9.0.0",
   "customizations": {
     "vscode": {
-      "extensions": ["coq-community.vscoq1"],
+      "extensions": ["maximedenes.vscoq"],
       "settings": {
         "files.exclude": {
           "**/*.aux": true,
@@ -12,6 +12,7 @@
           "**/*.vok": true,
           "**/.*.cache": true
         },
+        "vscoq.path": "/home/rocq/.opam/4.14.2+flambda/bin/",
         "coq.loadCoqProject": true,
         "coq.coqProjectRoot": ".",
         "[coq]": {
