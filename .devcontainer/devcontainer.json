@@ -1,5 +1,5 @@
 {
-  "image": "eskehoy/aufsv22:8.17.1",
+  "image": "eskehoy/aufsv22:9.0.0",
   "customizations": {
     "vscode": {
       "extensions": ["coq-community.vscoq1"],
