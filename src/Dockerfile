@@ -1,7 +1,7 @@
-ARG COQ_IMAGE=coqorg/coq:8.17.1-ocaml-4.14.1-flambda
+ARG COQ_IMAGE=rocq/rocq-prover:9.0.0-ocaml-4.14.2-flambda
 FROM ${COQ_IMAGE}
 
-ARG OPAM_PACKAGES="coq-equations.1.3+8.17 coq-quickchick.2.0.0"
+ARG OPAM_PACKAGES="rocq-equations.1.3.1+9.0 coq-quickchick.2.1.1"
 
 # Install opam packages
 RUN opam install -y -j ${NJOBS} ${OPAM_PACKAGES} && \
